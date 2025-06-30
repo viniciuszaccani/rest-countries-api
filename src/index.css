@@ -2,32 +2,38 @@
 
 @import "tailwindcss";
 
+
 @theme {
   --font-nunito: "Nunito Sans", sans-serif;
+
+   /* Dark Mode */
+  --color-bg-dark: hsl(207, 26%, 17%);           /* Blue 950 */
+  --color-surface-dark: hsl(209, 23%, 22%);      /* Blue 900 */
+  --color-text-dark: hsl(0, 100%, 100%);         /* White */
+
+  /* Light Mode */
+  --color-bg-light: hsl(0, 0%, 99%);             /* Grey 50 */
+  --color-surface-light: hsl(0, 100%, 100%);     /* White */
+  --color-text-light: hsl(200, 15%, 8%);         /* Grey 950 */
+  --color-placeholder-light: hsl(0, 0%, 50%);    /* Grey 400 */   
+  
+}
+
+* {
+  box-sizing: border-box;
 }
 
 body {
+  padding: 0;
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-  background-color: #242424;
+  box-sizing: border-box;
+  background-color: hsl(207, 26%, 17%);
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+.ant-input-search-button .ant-btn-icon {
+  color: white;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
+.ant-input-clear-icon {
+  color: white !important;
 }
