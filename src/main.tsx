@@ -10,6 +10,7 @@ createRoot(document.getElementById('root')!).render(
   theme={{
     token: {
       colorPrimary: 'hsl(0, 100%, 100%)',
+      
     },
     components: {
       Input: {
@@ -19,16 +20,9 @@ createRoot(document.getElementById('root')!).render(
         colorTextPlaceholder: 'hsl(0, 100%, 100%); ',
         borderRadius: 8,
         colorPrimaryHover: 'hsl(0, 100%, 100%)',
-        colorIcon: 'hsl(0, 100%, 100%)',
       },
-      Button: {
-        colorBgContainer: 'hsl(209, 23%, 22%)',
-        colorText: 'hsl(0, 100%, 100%)',
-        colorPrimaryHover: 'hsl(0, 100%, 100%)',
-        borderRadius: 8,
-        colorBorder: 'transparent',
-        
-      },
+
+
     },
   }}
 >
