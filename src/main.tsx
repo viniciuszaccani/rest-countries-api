@@ -2,7 +2,27 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.tsx'
-import { ConfigProvider } from 'antd'
+import { ConfigProvider, theme } from 'antd'
+
+export const lightTheme = {
+  algorithm: theme.defaultAlgorithm,
+  token: {
+    colorPrimary: '#1890ff',
+    colorBgBase: '#ffffff',
+    colorTextBase: '#000000',
+    borderRadius: 8,
+  },
+};
+
+export const darkTheme = {
+  algorithm: theme.darkAlgorithm,
+  token: {
+    colorPrimary: '#ff7f50',
+    colorBgBase: '#141414',
+    colorTextBase: '#e0e0e0',
+    borderRadius: 8,
+  },
+};
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
@@ -24,6 +44,9 @@ createRoot(document.getElementById('root')!).render(
 
 
     },
+
+    
+
   }}
 >
       <App />
